@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" >
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>>
+    <script defer src="app.js"></script>
+</head>
+<body> 
+    <div id="topbar">
+        <div id="headerwrap">
+            <div id="header">
+                <p>
+                    Hamish Hill<br />
+                    Developer Portfolio
+                </p>
+            </div>
+        </div>
+        <div id="navigationwrap">
+            <div id="navigation">
+                <nav>
+                    <a href="#static-image">Intro </a> &nbsp;  <a class="anav" href="#projects">Projects</a> &nbsp; <a class="anav" href="#skills">Skills</a> &nbsp; <a href="#contact">Contact Info</a> 
+                </nav>
+            </div>
+            <div id="social-links">
+                <a class="anav" href=https://www.linkedin.com/in/hamish-hill-253a05199/ target="_blank">Linkedin</a> &nbsp; <a class="anav" href=https://github.com/HamishHill-WK target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="static-image" id="static-image">
+            <img src="spaceman.png" alt="spaceman" >
+            <div class="dynamic-line"></div>
+            <div class="moving-image">
+                <img src="star.png" alt="star" >
+            </div>
+        </div>
+        <div class="main-content">
+            <section class="hidden" id="intro">
+                <h1>Hello! I am</h1>
+                <h2>Hamish Hill</h2>
+                <p>
+                    Graduate programmer from the University of Abertay seeking my first role as a developer. Check out some of my projects below. 
+                </p>
+            </section>
+            
+            <section class="hidden" id="projects">
+                <h2>Projects</h2>
+                <p>projects</p>
+            </section>
+
+            <section class="hidden" id="skills">
+                <h2>Skills & Qualifications</h2>
+                <p>I hate cheese</p>
+            </section>
+
+            <section class="hidden" id="contact">
+                <h2>Contact Info</h2>             
+                <p>
+                    Email:          hamishhill1909@gmail.com 
+                </p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="company">Company:</label>
+                    <input type="company" id="company" name="company"> <br>
+                
+                    <div id="message-box">
+                        <label for="message">Message:</label> 
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <input type="submit" value="Send">
+                  </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
