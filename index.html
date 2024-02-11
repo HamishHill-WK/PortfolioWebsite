@@ -11,19 +11,15 @@
 <body> 
     <div id="topbar">
         <div id="headerwrap">
-            <div id="header">
-                <p>
-                    Hamish Hill<br />
-                    Developer Portfolio
-                </p>
-            </div>
+            <p>
+                Hamish Hill<br />
+                Developer Portfolio
+            </p>
         </div>
         <div id="navigationwrap">
-            <div id="navigation">
-                <nav>
-                    <a href="#static-image">Intro </a> &nbsp;  <a class="anav" href="#projects">Projects</a> &nbsp; <a class="anav" href="#skills">Skills</a> &nbsp; <a href="#contact">Contact Info</a> 
-                </nav>
-            </div>
+            <nav id="navigation">
+                <a href="#static-image">Intro </a> &nbsp;  <a class="anav" href="#projects">Projects</a> &nbsp; <a class="anav" href="#skills">Skills</a> &nbsp; <a href="#contact">Contact Info</a> 
+            </nav>
             <div id="social-links">
                 <a class="anav" href=https://www.linkedin.com/in/hamish-hill-253a05199/ target="_blank">Linkedin</a> &nbsp; <a class="anav" href=https://github.com/HamishHill-WK target="_blank">GitHub</a>
             </div>
@@ -38,6 +34,7 @@
                 <img src="star.png" alt="star" >
             </div>
         </div>
+
         <div class="main-content">
             <section class="hidden" id="intro">
                 <h1>Hello! I am</h1>
@@ -50,11 +47,104 @@
             <section class="hidden" id="projects">
                 <h2>Projects</h2>
                 <p>projects</p>
+                <div id="grid">
+                    <div id="search">
+                    <input type="text" id="search-bar" placeholder="Search..."> <button id="search-button">search</button>
+                </div>
+                        <button id="filter-buttons" data-filter="tag1">Tag 1</button>
+                        <button id="filter-buttons" data-filter="tag2">Tag 2</button>
+                        <button id="filter-buttons" data-filter="tag3">Tag 3</button>
+                        <div id="grid-container">
+                            <a href="Moonclock.html">
+                                <div id="project" class="grid-tile">
+                
+                                    <img id="project-image" src="../Images/Moon/default.png" alt="Screenshot of Moon page " />
+                
+                                    <div id="project-name">Moon Data</div>
+                                </div>
+                            </a>
+                            <a href="Moonclock.html" class="grid-tile">
+                                <div id="project">
+                
+                                    <img id="project-image" src="../Images/Moon/default.png" alt="Screenshot of Moon page " />
+                
+                                    <div id="project-name">Moon Data</div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
             </section>
 
             <section class="hidden" id="skills">
                 <h2>Skills & Qualifications</h2>
-                <p>I hate cheese</p>
+                <div id="grid-container-SQ">
+                        <div id="qualification" class="grid-tile">
+                            <h2>
+                                BSc (Hons) Computer Games Applications Development <br>
+                                University of Abertay 
+                            </h2>
+        
+                            <p id="degree">
+                                At Abertay I learned about some key areas in applications developlment: <br>
+                                <p id="degree-modules">
+                                Artificial Intelligence. Network Programming. <br>
+                                Gameplay Programming. Augmented Reality. <br>
+                                Tools Development. Audio Programming. <br>
+                                Data Structure and Algorithms. Graphics Programming. <br>
+                                </p>
+                            </p>
+
+                        </div>
+                    
+                        <div id="programming-languages">      
+                            <h2>
+                                Programming Languages
+                            </h2>
+                            <div id="grid-container">
+                                <div id="langauge" class="grid-tile">
+                                    <h3>C++</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>C#</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>Javascript</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>Python</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>Kotlin</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>HTML</h3>
+                                </div>
+                                <div id="langauge" class="grid-tile">
+                                    <h3>CSS</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="other-software">      
+                            <h2>
+                                Other Software
+                            </h2>
+                            <div id="grid-container">
+                                <div id="software" class="grid-tile">
+                                    <h3>Git</h3>
+                                </div>
+                                <div id="software" class="grid-tile">
+                                    <h3>Unity</h3>
+                                </div>
+                                <div id="software" class="grid-tile">
+                                    <h3>Unreal Engine</h3>
+                                </div>
+                                <div id="software" class="grid-tile">
+                                    <h3>Audiokinetic Wwise</h3>
+                                </div>
+                            </div>
+                        </div>
+                </div>
             </section>
 
             <section class="hidden" id="contact">
@@ -68,6 +158,9 @@
                 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="subject" id="subject" name="subject"> 
 
                     <label for="company">Company:</label>
                     <input type="company" id="company" name="company"> <br>
